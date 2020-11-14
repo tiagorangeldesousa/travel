@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>iTravel - Paris</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+
+    
+    <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Your code here -->
+      <template>
+  <div class="page-container">
+    <md-app md-waterfall md-mode="fixed-last">
+      <md-app-toolbar class="md-large md-dense md-primary">
+        <div class="md-toolbar-row">
+          <div class="md-toolbar-section-start">
+            <md-button class="md-icon-button">
+              <md-icon>flight</md-icon>
+            </md-button>
+
+            <span class="md-title">Itravel</span>
+          </div>
+
+          <div class="md-toolbar-section-end">
+            <md-button class="md-icon-button">
+              <md-icon>more_vert</md-icon>
+               <md-tooltip md-direction="bottom">Options</md-tooltip>
+            </md-button>
+          </div>
+        </div>
+
+        <div class="md-toolbar-row">
+          <md-tabs class="md-primary">
+            <a href="/"><md-tab id="tab-home" md-label="Home"></md-tab></a>
+            <md-tab id="tab-pages" md-label="Pages"></md-tab>
+            <md-tab id="tab-posts" md-label="Posts"></md-tab>
+            <md-tab id="tab-favorites" md-label="Favorites"></md-tab>
+          </md-tabs>
+        </div>
+      </md-app-toolbar>
+
+      <md-app-drawer :md-active.sync="menuVisible">
+        <md-toolbar class="md-transparent" md-elevation="0">Navigation</md-toolbar>
+
+        <md-list>
+          <md-list-item>
+            <md-icon>move_to_inbox</md-icon>
+            <span class="md-list-item-text">Inbox</span>
+          </md-list-item>
+
+          <md-list-item>
+            <md-icon>send</md-icon>
+            <span class="md-list-item-text">Sent Mail</span>
+          </md-list-item>
+
+          <md-list-item>
+            <md-icon>delete</md-icon>
+            <span class="md-list-item-text">Trash</span>
+          </md-list-item>
+
+          <md-list-item>
+            <md-icon>error</md-icon>
+            <span class="md-list-item-text">Spam</span>
+          </md-list-item>
+        </md-list>
+      </md-app-drawer>
+
+      <md-app-content>
+         <img src="https://www.gstatic.com/travel-frontend/animation/hero/flights_3.svg">
+            <md-field>
+     <md-icon>search</md-icon>
+      <label>Search for places</label>
+      <md-input v-model="search"></md-input> 
+          
+    </md-field>
+        
+          <md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Paris ⚝</div>
+          <div class="md-subhead">Paris, the capital of France, is an important European city and a world center for art, fashion, gastronomy and culture.</div>
+          <br>
+          Paris is the capital and most populous city in France, with an estimated 2020 population of 2,148,271 inhabitants over an area of ​​105 square kilometers. Since the 17th century, Paris has been one of the main centers of finance, diplomacy, commerce, fashion, science and the arts in Europe. The city of Paris is the center and seat of government of the administrative region of Île-de-France, which has an estimated population in 2020 of 12 278 210 inhabitants, or about 18% of the population of France. In 2017, the Paris region had a GDP of 709 billion euros. According to the Economist Intelligence Unit's Cost of Living Survey in 2018, Paris was the second most expensive city in the world, behind Singapore and ahead of Zurich, Hong Kong, Oslo and Geneva.
+<br>
+Spanning numerous monuments and because of its considerable political and economic role, Paris is also an important city in the history of the world. Its position at a crossroads between commercial land and river routes in the heart of a rich agricultural region has made it one of the main French cities throughout the 10th century, benefiting from royal palaces, rich abbeys and a cathedral. Throughout the 12th century, it became one of the first European centers of education and art. The economic and political importance of Paris was reinforced when the Kings of France and the court settled in the city. Thus, Paris has become one of the most important cities in the entire western world, the capital of the greatest European political power (17th century), the cultural center of Europe (18th century) and the capital of art and leisure (19th century) .
+<br>
+Paris is the economic and commercial capital of France, where the stock exchange and finance businesses are concentrated. The density of its rail, road and airport structure - a hub of the French and European air network - makes it a point of convergence for international transport. The city is home to two international airports: Paris-Charles de Gaulle Airport, the second busiest airport in Europe, and Paris-Orly Airport. Opened in 1900, the city's metro, the Paris Metro, serves 5.23 million passengers daily; it is the second busiest metro system in Europe, surpassed by the Moscow metro. [11] Gare du Nord is the 24th busiest railway station in the world, but the first located outside Japan, with 262 million passengers in 2015.
+<br>
+In 2018, Paris received 16.8 million tourists, making it the eighth most visited city in the world that year, as well as the second city in Europe, after London. The Paris Saint-Germain football club and the Stade Français rugby club are based in Paris. The 81,000-seat Stade de France, built for the 1998 FIFA World Cup, is located in the north of the city, in the neighboring commune of Saint-Denis. Paris organizes the Grand Slam tennis tournament annually. It hosted the 1900 and 1924 Summer Olympics, and is expected to host the 2024 Olympics. Paris was also the host city for the FIFA World Cups of 1938 and 1998, the Rugby Union World Cup of 2007 and the European Football Championship of 1960, 1984 and 2016.The Tour de France road cycling competition ends in Paris every July.
+
+
+
+        <a 
+        href="https://www.google.com/travel/things-to-do?g2lb=2502548,4258168,4270442,4271060,4306835,4317915,4328159,4371335,4401769,4419364,4428792,4429191,4433754,4447566,4456077,4463263,4270859,4284970,4291517,4412693&hl=pt-PT&gl=pt&un=1&dest_mid=/m/05qtj&dest_state_type=main&dest_src=kl&sa=X&ved=2ahUKEwiqle-NooLtAhWSCWMBHakgBJ8Qri4wJXoECA8QAw">
+        <md-button><md-icon>tour</md-icon>Tourist Guide</md-button></a>
+
+      <a href="https://www.google.com/maps/place/Paris,+Fran%C3%A7a/data=!4m2!3m1!1s0x47e66e1f06e2b70f:0x40b82c3688c9460">
+        <md-button><md-icon>localation_on</md-icon>See at Google maps</md-button></a>
+ 
+       
+        
+         </md-app-content>
+    </md-app>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+  .md-app {
+    max-height: 400px;
+    border: 1px solid rgba(#000, .12);
+  }
+
+
+</style>
+
+<script>
+export default {
+  name: 'LastRowFixed',
+  data: () => ({
+    menuVisible: false
+  })
+}
+</script>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+    <script>
+      Vue.use(VueMaterial.default)
+
+      new Vue({
+        el: '#app'
+      })
+    </script>
+  </body>
+</html>
+    
+    
+    
+
+    
+  </body>
+</html>
+
+
+
+
+<div id="app">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
